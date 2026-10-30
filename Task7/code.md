@@ -62,7 +62,7 @@ flowchart TD
     S --> T([Stop])
 ```
 
-## 5. Sample Input
+## 4. Sample Input
 
 ```
 Enter tank capacity: 1000
@@ -91,7 +91,7 @@ Enter water inflow: 100
 Enter water outflow: 150
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 ```
 ========== WATER TANK REPORT ==========
@@ -123,7 +123,7 @@ Final Water Level: 800.0
 Threshold First Reached on Day: 2
 ```
 
-## Explanation of Important Python Concepts
+## 6.Explanation of Important Python Concepts
 
 - Variables: Store tank capacity, water level, inflow, and outflow.
 - Data types: Use integers or floating-point numbers for water quantities.
