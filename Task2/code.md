@@ -43,7 +43,7 @@ Finally, the program displays the total fare, concession, reservation fee, cance
 14. Display the passenger-wise and total billing details.
 15. Stop the program.
 
-## 3. Flowchart (Mermaid)
+## 3. Flowchart 
 ```Mermaid
 
 flowchart TD
@@ -79,7 +79,7 @@ flowchart TD
     X --> Z([Stop])
 ```
 
-## 5. Sample Input
+## 4. Sample Input
 
 Railway Reservation Details
 
@@ -101,7 +101,7 @@ Enter passenger age: 10
 Do you want to cancel ticket? (yes/no): yes
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 Railway Reservation Summary
 
@@ -151,7 +151,7 @@ Total Refund Amount: Rs. 321.25
 ========================================
 ```
 
-## 7. Explanation of Python Concepts Used
+## 6. Explanation of Python Concepts Used
 
 | Concept                | Application                                |
 | ---------------------- | ------------------------------------------ |
