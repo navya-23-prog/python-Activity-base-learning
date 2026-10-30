@@ -74,7 +74,7 @@ flowchart TD
     R --> S
 ```
 
-## 5. Sample Input
+## 4. Sample Input
 
 ```
 Enter number of proposed courses: 3
@@ -101,7 +101,7 @@ End time (HH:MM): 12:30
 Room number: R101
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 ```
 ========== TIMETABLE VALIDATION ==========
@@ -119,7 +119,7 @@ Room R101 is unavailable.
 Result: Timetable Contains Conflicts.
 ```
 
-## Explanation of Important Python Concepts
+## 6.Explanation of Important Python Concepts
 
 - Strings: Store course names, days, room numbers, and time values.
 - Tuples: Store course schedules as a collection of related details.
