@@ -77,7 +77,7 @@ flowchart TD
 ```
 
 
-## 5. Sample Input
+## 4. Sample Input
 
 Employee Details
 
@@ -92,7 +92,7 @@ Enter overtime rate per hour: Rs. 200
 Enter incentives: Rs. 3000
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 Employee Salary Statement
 
@@ -128,7 +128,7 @@ Net Salary          : Rs. 38000.0
 ==========================================
 ```
 
-## 7. Explanation of Python Concepts Used
+## 6. Explanation of Python Concepts Used
 
 | Python concept         | Application                       |
 | ---------------------- | --------------------------------- |
