@@ -54,7 +54,7 @@ flowchart TD
     N -- No --> P([Stop])
 ```
 
-## 5. Sample Input
+## 4. Sample Input
 
 ```
 Enter the number of products: 3
@@ -84,7 +84,7 @@ Actual closing stock: 260
 Minimum stock level: 150
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 ```
 ========== WAREHOUSE INVENTORY REPORT ==========
@@ -122,7 +122,7 @@ Replenishment Required: 0
 ========== REPORT COMPLETED ==========
 ```
 
-## Explanation of Important Concepts
+## 6.Explanation of Important Concepts
 
 - Variables: Store product details such as opening stock and closing stock.
 - Operators: Perform addition, subtraction, and comparison.
