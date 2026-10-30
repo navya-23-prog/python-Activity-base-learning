@@ -45,7 +45,6 @@ Finally, the program displays the total fare, concession, reservation fee, cance
 
 ## 3. Flowchart 
 ```Mermaid
-
 flowchart TD
     A([Start]) --> B[/Enter number of passengers/]
     B --> C[/Enter journey distance/]
