@@ -77,8 +77,6 @@ flowchart TD
     W -- Yes --> H
     W -- No --> X[/Display total bill and refund/]
     X --> Z([Stop])
-
-
 ```
 
 ## 5. Sample Input
