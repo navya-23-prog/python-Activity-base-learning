@@ -77,7 +77,7 @@ flowchart TD
     W --> Z([Stop])
 ```
 
-## 5. Sample Input
+## 4. Sample Input
 
 Student Examination Details
 
@@ -111,7 +111,7 @@ Enter subject name: Computer Science
 Enter marks obtained: 90
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 Examination Result
 
@@ -154,7 +154,7 @@ Final Result        : PASS WITH GRACE
 ==============================================
 ```
 
-## 7. Explanation of Python Concepts Used
+## 6. Explanation of Python Concepts Used
 
 | Python concept       | Application                         |
 | -------------------- | ----------------------------------- |
