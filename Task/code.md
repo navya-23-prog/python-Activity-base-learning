@@ -75,7 +75,7 @@ flowchart TD
     Q --> R[/Display Travel Budget Report/]
     R --> Z([Stop])
 ```
-## 5. Sample Input
+## 4. Sample Input
 
 Travel Details
 
