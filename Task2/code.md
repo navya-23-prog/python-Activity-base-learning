@@ -78,7 +78,6 @@ flowchart TD
     W -- No --> X[/Display total bill and refund/]
     X --> Z([Stop])
 ```
-
 ## 4. Sample Input
 
 Railway Reservation Details
