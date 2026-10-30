@@ -37,9 +37,9 @@ The system displays the total bill, concession amount, final payable amount, pay
 13. Calculate the remaining balance.
 14. Display the complete billing details.
 15. Stop the program.
-```mermaid
-## 3. Flowchart 
 
+## 3. Flowchart 
+```mermaid
 flowchart TD
     A([Start]) --> B[/Enter patient name and age/]
     B --> C[/Enter consultation charges/]
