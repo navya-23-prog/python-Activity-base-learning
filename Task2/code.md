@@ -1,4 +1,4 @@
-# Railway Fare and Reservation Calculator Using Python.
+# Railway Fare and Reservation Calculator Using Python
 
 ## 1. Problem Statement
 
@@ -77,6 +77,8 @@ flowchart TD
     W -- Yes --> H
     W -- No --> X[/Display total bill and refund/]
     X --> Z([Stop])
+
+
 ```
 ## 4. Sample Input
 
