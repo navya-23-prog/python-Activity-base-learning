@@ -77,7 +77,7 @@ flowchart TD
     O --> Z([Stop])
 ```
 
-## 5. Sample Input
+## 4. Sample Input
 
 Student Attendance Details
 
@@ -93,7 +93,7 @@ Enter classes attended: 65
 Enter required attendance percentage: 75
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 Attendance Recovery Report
 
@@ -144,7 +144,7 @@ Future Attendance Percentage: 60.71 %
 ==============================================
 ```
 
-## 7. Explanation of Python Concepts Used
+## 6. Explanation of Python Concepts Used
 
 | Python concept         | Application                          |
 | ---------------------- | ------------------------------------ |
