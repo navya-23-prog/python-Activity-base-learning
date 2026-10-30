@@ -111,7 +111,7 @@ Enter exchange rate (INR per unit): 90
 Enter conversion fee percentage: 2
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 Travel Budget Report
 
@@ -145,7 +145,7 @@ Budget Status      : BUDGET EXCEEDED
 ==============================================
 ```
 
-## 7. Explanation of Python Concepts Used
+## 6. Explanation of Python Concepts Used
 
 | Python concept         | Application                         |
 | ---------------------- | ----------------------------------- |
