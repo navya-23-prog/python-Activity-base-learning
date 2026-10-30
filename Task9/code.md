@@ -74,7 +74,7 @@ flowchart TD
     S --> T([Stop])
 ```
 
-## 5. Sample Input
+## 4. Sample Input
 
 ```
 Enter initial account balance: 10000
@@ -102,7 +102,7 @@ Enter transaction type (Deposit/Withdrawal): withdrawal
 Enter transaction amount: 1000
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 ```
 ========== ATM TRANSACTION DETAILS ==========
@@ -138,7 +138,7 @@ Remaining Daily Withdrawal Limit: 1000.0
 ========== THANK YOU ==========
 ```
 
-## Explanation of Important Python Concepts
+## 6.Explanation of Important Python Concepts
 
 - Variables: Store account balance, transaction amount, and daily withdrawal limit.
 - Data types: Use floating-point numbers for transaction amounts.
