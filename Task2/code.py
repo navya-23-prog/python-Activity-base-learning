@@ -1,138 +1,126 @@
 
-# Railway Fare and Reservation Calculator
+# Manufacturing Cost and Profitability Analysis
 
-print("========================================")
-print("   RAILWAY FARE AND RESERVATION SYSTEM")
-print("========================================")
+print("==============================================")
+print("   MANUFACTURING COST AND PROFIT ANALYSIS")
+print("==============================================")
 
-# Travel class fare rates
-print("\nAvailable Travel Classes:")
-print("1. Sleeper     - Rs. 1.50 per km")
-print("2. AC 3 Tier   - Rs. 2.50 per km")
-print("3. AC 2 Tier   - Rs. 3.50 per km")
-print("4. AC 1 Tier   - Rs. 5.00 per km")
+# Input product details
+product = input("Enter product name: ")
 
-# Input details
-n = int(input("\nEnter number of passengers: "))
-distance = float(input("Enter journey distance (km): "))
+quantity = int(input("Enter production quantity: "))
 
-if n <= 0 or distance <= 0:
-    print("Invalid passenger count or distance.")
+material_per_unit = float(
+    input("Enter material cost per unit: Rs. ")
+)
+
+labour_per_unit = float(
+    input("Enter labour cost per unit: Rs. ")
+)
+
+wastage_percentage = float(
+    input("Enter wastage percentage: ")
+)
+
+machine_cost = float(
+    input("Enter machine operating cost: Rs. ")
+)
+
+selling_price = float(
+    input("Enter selling price per unit: Rs. ")
+)
+
+profit_target = float(
+    input("Enter expected profit target: Rs. ")
+)
+
+# Validate inputs
+if (quantity <= 0 or material_per_unit < 0 or
+    labour_per_unit < 0 or wastage_percentage < 0 or
+    wastage_percentage > 100 or machine_cost < 0 or
+    selling_price < 0 or profit_target < 0):
+
+    print("\nInvalid Input!")
+    print("Please enter valid positive values.")
 
 else:
-    choice = int(input("Select travel class (1-4): "))
 
-    rates = {
-        1: 1.50,
-        2: 2.50,
-        3: 3.50,
-        4: 5.00
-    }
+    # Calculate material cost
+    material_cost = quantity * material_per_unit
 
-    if choice not in rates:
-        print("Invalid travel class.")
+    # Calculate labour cost
+    labour_cost = quantity * labour_per_unit
 
+    # Calculate wastage cost
+    wastage_cost = material_cost * wastage_percentage / 100
+
+    # Calculate total production cost
+    total_cost = (
+        material_cost + labour_cost +
+        wastage_cost + machine_cost
+    )
+
+    # Calculate total revenue
+    revenue = quantity * selling_price
+
+    # Calculate profit or loss
+    profit = revenue - total_cost
+
+    # Calculate profit percentage
+    if total_cost > 0:
+        profit_percentage = (profit / total_cost) * 100
     else:
-        class_names = {
-            1: "Sleeper",
-            2: "AC 3 Tier",
-            3: "AC 2 Tier",
-            4: "AC 1 Tier"
-        }
+        profit_percentage = 0
 
-        rate = rates[choice]
-        reservation_fee = 40
-        cancellation_rate = 0.25
+    # Check profit target
+    if profit >= profit_target:
+        status = "TARGET ACHIEVED"
+    else:
+        status = "TARGET NOT ACHIEVED"
 
-        total_fare = 0
-        total_refund = 0
-        total_penalty = 0
-        total_reservation = 0
+    # Display manufacturing report
+    print("\n==============================================")
+    print("       MANUFACTURING COST REPORT")
+    print("==============================================")
 
-        for i in range(1, n + 1):
+    print("Product Name          :", product)
+    print("Production Quantity   :", quantity)
 
-            print("\nPassenger", i)
+    print("----------------------------------------------")
+    print("              COST DETAILS")
+    print("----------------------------------------------")
 
-            age = int(input("Enter passenger age: "))
+    print("Material Cost         : Rs.",
+          round(material_cost, 2))
 
-            if age < 0:
-                print("Invalid age. Enter age again.")
-                age = int(input("Enter valid age: "))
+    print("Labour Cost           : Rs.",
+          round(labour_cost, 2))
 
-            # Calculate basic fare
-            basic_fare = distance * rate
+    print("Wastage Cost          : Rs.",
+          round(wastage_cost, 2))
 
-            # Age-based concession
-            if age < 5:
-                concession_rate = 1.0
-                category = "Child (Free)"
+    print("Machine Cost          : Rs.",
+          round(machine_cost, 2))
 
-            elif age <= 11:
-                concession_rate = 0.50
-                category = "Child"
+    print("----------------------------------------------")
+    print("Total Production Cost : Rs.",
+          round(total_cost, 2))
 
-            elif age >= 60:
-                concession_rate = 0.40
-                category = "Senior Citizen"
+    print("Total Revenue         : Rs.",
+          round(revenue, 2))
 
-            else:
-                concession_rate = 0
-                category = "Adult"
+    print("Profit / Loss         : Rs.",
+          round(profit, 2))
 
-            concession = basic_fare * concession_rate
-            fare = basic_fare - concession
+    print("Profit Percentage     :",
+          round(profit_percentage, 2), "%")
 
-            # Add reservation fee
-            ticket_fare = fare + reservation_fee
+    print("Expected Profit       : Rs.",
+          round(profit_target, 2))
 
-            print("\nBasic Fare: Rs.", round(basic_fare, 2))
-            print("Concession: Rs.", round(concession, 2))
-            print("Reservation Fee: Rs.", reservation_fee)
+    print("----------------------------------------------")
+    print("Production Status     :", status)
 
-            cancel = input(
-                "Do you want to cancel ticket? (yes/no): "
-            ).lower()
-
-            if cancel == "yes":
-
-                penalty = fare * cancellation_rate
-                refund = ticket_fare - penalty
-
-                print("Cancellation Penalty: Rs.",
-                      round(penalty, 2))
-                print("Refund Amount: Rs.",
-                      round(refund, 2))
-
-                total_penalty += penalty
-                total_refund += refund
-
-            else:
-                print("Ticket Confirmed!")
-                print("Amount Payable: Rs.",
-                      round(ticket_fare, 2))
-
-                total_fare += ticket_fare
-
-            total_reservation += reservation_fee
-
-        # Final summary
-        print("\n========================================")
-        print("          FINAL RAILWAY SUMMARY")
-        print("========================================")
-
-        print("Number of Passengers:", n)
-        print("Travel Class:", class_names[choice])
-        print("Distance:", distance, "km")
-        print("Reservation Fees: Rs.",
-              round(total_reservation, 2))
-        print("Total Cancellation Penalty: Rs.",
-              round(total_penalty, 2))
-        print("Total Amount Payable: Rs.",
-              round(total_fare, 2))
-        print("Total Refund Amount: Rs.",
-              round(total_refund, 2))
-
-        print("========================================")
-        print("       THANK YOU! HAPPY JOURNEY!")
-        print("========================================")
-
+    print("==============================================")
+    print("       ANALYSIS COMPLETED SUCCESSFULLY")
+    print("==============================================")
