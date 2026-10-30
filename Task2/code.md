@@ -94,7 +94,7 @@ flowchart TD
 
 
 
-## 5. Sample Input
+## 4.Sample Input
 
 Manufacturing Details
 
@@ -116,7 +116,7 @@ Enter selling price per unit: Rs. 40
 Enter expected profit target: Rs. 8000
 ```
 
-## 6. Sample Output
+## 5. Sample Output
 
 Manufacturing Cost Report
 
@@ -158,7 +158,7 @@ Production Status     : TARGET ACHIEVED
 ==============================================
 ```
 
-## 7. Explanation of Python Concepts Used
+## 6. Explanation of Python Concepts Used
 
 | Python concept         | Application                             |
 | ---------------------- | --------------------------------------- |
